@@ -395,13 +395,14 @@ else {
 		$("#to_place").show();
 		$("#cmdu").hide();
 		$("#button_div").hide();
-		$("#button_div").hide();
 		$("#button_div").show();
+		$("#button_div").show();
+		$("#select_items").hide();
+		$("#select_items_copy").hide();
 		$("#src_place").show();
 		//$('#selected_items').css("margin-top", "-105px");
 		//$('#button_div').css("margin-top", "10px");
-		$("#select_items_button").hide();
-		$("#select_items_button_copy").show();
+		$("#select_items_button").show();
 		var str='Moving completed. Please click   <a href='+finalurl+'>here </a>  for the new location of your content.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 		

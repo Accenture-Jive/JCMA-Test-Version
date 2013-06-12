@@ -99,12 +99,12 @@ $("#button_div").hide();
 if(browserName=="MSIE" && globalAction == 'move')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-document.getElementById("selected_items").innerHTML=ieSpan; 
+document.getElementById("selected_items_copy").innerHTML=ieSpan; 
 }
 else if(browserName=="MSIE" && globalAction == 'delete')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-document.getElementById("selected_items").innerHTML=ieSpan; 
+document.getElementById("selected_items_copy").innerHTML=ieSpan; 
 }
 else
 {
@@ -377,11 +377,14 @@ else {
 				$("#from_place").show();
 				$("#to_place").show();
 				$("#cmdu").hide();
-				$("#button_div").show();
+				$("#button_div").hide();
+				$("#button_div_copy").show();
 				$("#src_place").show();
 				//$('#selected_items').css("margin-top", "-105px");
 				//$('#button_div').css("margin-top", "10px");
-				$("#select_items_button").show();
+				$("#select_items_button").hide();
+				$("#select_items_button_copy").show();
+				
 			}
 			else {
 

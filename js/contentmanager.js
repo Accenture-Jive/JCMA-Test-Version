@@ -2762,7 +2762,7 @@ function blankMethod(response)
 // the method is blank because we are adding the call just to complete the syntax.
 }
 
-function refreshiframe() 
+function iframe() 
 { 
 // to hit the logger servlet and get the response of which action is being done right now.
 flag=true;
@@ -2812,8 +2812,8 @@ $("#to_label").show();
 $("#from_place").show();
 $("#to_place").show();
 $("#button_div").show();
-//$('#select_items_button').css("margin-top", "20px");
-//$('#selected_items').css("margin-top", "-120px");
+$('#select_items_button').css("margin-top", "20px");
+$('#selected_items').css("margin-top", "-120px");
 $("#select_items_button").show();
 $("#copyTo").text("Copy this:");
 }

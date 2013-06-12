@@ -99,16 +99,19 @@ $("#button_div").hide();
 if(browserName=="MSIE" && globalAction == 'move')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-document.getElementById("selected_items_copy").innerHTML=ieSpan; 
+document.getElementById("selected_items").innerHTML=ieSpan; 
+document.getElementById("selected_items_copy").innerHTML=ieSpan;  
 }
 else if(browserName=="MSIE" && globalAction == 'delete')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-document.getElementById("selected_items_copy").innerHTML=ieSpan; 
+document.getElementById("selected_items").innerHTML=ieSpan; 
+document.getElementById("selected_items_copy").innerHTML=ieSpan;  
 }
 else
 {
 var iframe = '<iframe id="frame1" src = "javascript:"&nbsp;" style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
+document.getElementById("selected_items").innerHTML=iframe;  
 document.getElementById("selected_items_copy").innerHTML=iframe;  
 $("#copyTo").text("Moving this:");
 }
@@ -405,6 +408,7 @@ else {
 		$("#select_items_button").hide();
 		var str='Moving completed. Please click   <a href='+finalurl+'>here </a>  for the new location of your content.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
+		
 		
 		}
 }

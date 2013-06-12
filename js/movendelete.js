@@ -392,7 +392,7 @@ else {
 		$("#to_place").show();
 		$("#cmdu").hide();
 		$("#button_div").hide();
-		//"#button_div").show();
+		$("#button_div").show();
 		$("#src_place").show();
 		//$('#selected_items').css("margin-top", "-105px");
 		//$('#button_div').css("margin-top", "10px");

@@ -2517,6 +2517,7 @@ var all_selected='';
 
 function goBack(){
 // handles the code for creating the final selection tables and the list of values to be passed to the server/javascript
+$('#selected_items').css("margin-top", "-0px");
 if(sel_action_val=="categs")
 {
 	
@@ -2525,7 +2526,7 @@ if(sel_action_val=="categs")
 else {
 
 if(sel_action_val=="move") {
-	$('#selected_items').css("margin-top", "-0px");
+	//$('#selected_items').css("margin-top", "-0px");
 }
 all_selected='';
 Grp_file_json='';

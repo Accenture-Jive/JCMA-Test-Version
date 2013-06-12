@@ -2762,7 +2762,7 @@ function blankMethod(response)
 // the method is blank because we are adding the call just to complete the syntax.
 }
 
-function iframe() 
+function refreshiframe() 
 { 
 // to hit the logger servlet and get the response of which action is being done right now.
 flag=true;
@@ -2816,9 +2816,6 @@ $('#select_items_button').css("margin-top", "20px");
 $('#selected_items').css("margin-top", "-120px");
 $("#select_items_button").show();
 $("#copyTo").text("Copy this:");
-var finalurl=redirection_url+'/content';
-var str='Copying completed. Please click   <a href='+finalurl+'>here </a>  for the new location of your content.';
-document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 }
 }
 else

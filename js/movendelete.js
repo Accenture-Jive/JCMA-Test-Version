@@ -99,23 +99,17 @@ $("#button_div").hide();
 if(browserName=="MSIE" && globalAction == 'move')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-var ieSpan1='<span id="ieSpan1" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
 document.getElementById("selected_items").innerHTML=ieSpan; 
-document.getElementById("selected_items_copy").innerHTML=ieSpan1;  
 }
 else if(browserName=="MSIE" && globalAction == 'delete')
 {
 var ieSpan='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-var ieSpan1='<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
 document.getElementById("selected_items").innerHTML=ieSpan; 
-document.getElementById("selected_items_copy").innerHTML=ieSpan1;  
 }
 else
 {
 var iframe = '<iframe id="frame1" src = "javascript:"&nbsp;" style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
-var iframe1 = '<iframe id="frame2" src = "javascript:"&nbsp;" style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
 document.getElementById("selected_items").innerHTML=iframe;  
-document.getElementById("selected_items_copy").innerHTML=iframe1;  
 $("#copyTo").text("Moving this:");
 }
 
@@ -138,33 +132,23 @@ if(browserName=="MSIE" && globalAction == 'move')
 {
  finalurl=redirection_url+'/content';
 document.getElementById("ieSpan").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
-
-document.getElementById("ieSpan1").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
 }
 else if(browserName=="MSIE" && globalAction == 'delete')
 {
  finalurl=source_html_url+'/content';
 document.getElementById("ieSpan").innerHTML = 'The selected contents have been deleted. This can be verified here: <a href='+finalurl+'>'+src_space_name+' - Contents</a>';
 }
-document.getElementById("ieSpan1").innerHTML = 'The selected contents have been deleted. This can be verified here: <a href='+finalurl+'>'+src_space_name+' - Contents</a>';
-
 else
 {
 document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma";	
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
 document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = str+"in Progress.<br>Please leave this window open until the "+str+"process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";	
-
-document.getElementById("frame2").contentDocument.body.style.fontFamily="Tahoma";	
-document.getElementById("frame2").contentDocument.body.style.fontSize = "12px";
-document.getElementById("frame2").contentDocument.body.style.color='Grey';
-document.getElementById("frame2").contentDocument.body.innerHTML = str+"in Progress.<br>Please leave this window open until the "+str+"process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";	
 }
 alert("to_place_blog_url = "+to_place_blog_url);
 targetUrl = target_groupurl;
 movendeleteIndex = 0;
 
-alert("Into move action..");
 if(globalAction == 'move'){
 movenContents();
 }
@@ -251,7 +235,6 @@ if(browserName=="MSIE")
 {
 var finalurl=redirection_url+'/content';
 document.getElementById("ieSpan").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
-document.getElementById("ieSpan1").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
 }
 else
 {
@@ -259,11 +242,6 @@ document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma"
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
 document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = str+"in Progress.<br>Please leave this window open until the "+str+"process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";
-
-document.getElementById("frame2").contentDocument.body.style.fontFamily="Tahoma";	
-document.getElementById("frame2").contentDocument.body.style.fontSize = "12px";
-document.getElementById("frame2").contentDocument.body.style.color='Grey';
-document.getElementById("frame2").contentDocument.body.innerHTML = str+"in Progress.<br>Please leave this window open until the "+str+"process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str2.fontcolor("#3778C7")+"</span>";
 }
 
 //if(noOfFileExecuted == noOfFile) {
@@ -275,8 +253,6 @@ if(browserName=="MSIE")
 {
 var finalurl=redirection_url+'/content';
 document.getElementById("ieSpan").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
-
-document.getElementById("ieSpan1").innerHTML = 'The selected contents are being moved. The moved contents will appear here in a short while: <a href='+finalurl+'>'+dest_space_name+' - Contents</a>';
 }
 else
 {
@@ -303,8 +279,6 @@ if(browserName=="MSIE")
 {
 var finalurl=source_html_url+'/content';
 document.getElementById("ieSpan").innerHTML = 'The selected contents have been deleted. This can be verified here: <a href='+finalurl+'>'+src_space_name+' - Contents</a>';
-
-document.getElementById("ieSpan1").innerHTML = 'The selected contents have been deleted. This can be verified here: <a href='+finalurl+'>'+src_space_name+' - Contents</a>';
 }
 else
 {
@@ -319,9 +293,6 @@ $("#del_select_items_button").show();
 
 var str='Deleting completed. You will now be redirected to "'+src_space_name+'".';
 document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-
-document.getElementById("frame2").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-
 
 /*$("#stylized").fadeOut(5000,function(){
 window.location = source_html_url+'/content';   
@@ -405,14 +376,11 @@ else {
 				$("#from_place").show();
 				$("#to_place").show();
 				$("#cmdu").hide();
-				$("#button_div").hide();
-				$("#button_div_copy").show();
+				$("#button_div").show();
 				$("#src_place").show();
-				//$('#selected_items').css("margin-top", "-105px");
-				//$('#button_div').css("margin-top", "10px");
-				$("#select_items_button").hide();
-				$("#select_items_button_copy").show();
-				
+				$('#selected_items').css("margin-top", "-105px");
+				$('#button_div').css("margin-top", "10px");
+				$("#select_items_button").show();
 			}
 			else {
 
@@ -422,18 +390,13 @@ else {
 		$("#from_place").show();
 		$("#to_place").show();
 		$("#cmdu").hide();
-		$("#button_div").hide();
-		$("#button_div").hide();
-		$("#button_div_copy").show();
-		$("#select_items").hide();
-		$("#select_items_copy").show();
+		$("#button_div").show();
 		$("#src_place").show();
-		//$('#selected_items').css("margin-top", "-105px");
-		//$('#button_div').css("margin-top", "10px");
-		//$("#select_items_button").hide();
+		$('#selected_items').css("margin-top", "-105px");
+		$('#button_div').css("margin-top", "10px");
+		$("#select_items_button").show();
 		var str='Moving completed. Please click   <a href='+finalurl+'>here </a>  for the new location of your content.';
-		document.getElementById("frame2").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-		
+		document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 		
 		}
 }

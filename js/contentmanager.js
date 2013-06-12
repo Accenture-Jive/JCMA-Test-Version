@@ -2524,7 +2524,7 @@ if(sel_action_val=="categs")
 }
 else {
 
-if(sel_action_val=="move") {
+if(sel_action_val=="move" || "copy") {
 	$('#selected_items').css("margin-top", "-0px");
 }
 all_selected='';

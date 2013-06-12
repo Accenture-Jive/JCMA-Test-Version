@@ -149,6 +149,7 @@ alert("to_place_blog_url = "+to_place_blog_url);
 targetUrl = target_groupurl;
 movendeleteIndex = 0;
 
+alert("Into move action..");
 if(globalAction == 'move'){
 movenContents();
 }

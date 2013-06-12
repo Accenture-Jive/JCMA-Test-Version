@@ -2527,6 +2527,9 @@ else {
 if(sel_action_val=="move" || "copy") {
 	$('#selected_items').css("margin-top", "-0px");
 }
+if(sel_action_val=="delete" ) {
+	$('#selected_items').css("margin-top", "100px");
+}
 all_selected='';
 Grp_file_json='';
 Grp_doc_json='';

@@ -379,8 +379,8 @@ else {
 				$("#cmdu").hide();
 				$("#button_div").show();
 				$("#src_place").show();
-				$('#selected_items').css("margin-top", "-105px");
-				$('#button_div').css("margin-top", "10px");
+				//$('#selected_items').css("margin-top", "-105px");
+				//$('#button_div').css("margin-top", "10px");
 				$("#select_items_button").show();
 			}
 			else {

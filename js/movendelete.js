@@ -396,9 +396,10 @@ else {
 		$("#cmdu").hide();
 		$("#button_div").hide();
 		$("#button_div").show();
-		$("#button_div").show();
+		$("#button_div").hide();
+		$("#button_div_copy").hide();
 		$("#select_items").hide();
-		$("#select_items_copy").hide();
+		$("#select_items_copy").show();
 		$("#src_place").show();
 		//$('#selected_items').css("margin-top", "-105px");
 		//$('#button_div').css("margin-top", "10px");

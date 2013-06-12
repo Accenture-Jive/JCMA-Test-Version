@@ -2523,6 +2523,10 @@ if(sel_action_val=="categs")
 		startUpdatingCategories();
 }
 else {
+
+if(sel_action_val=="copy") {
+	$('#selected_items').css("margin-top", "-0px");
+}
 all_selected='';
 Grp_file_json='';
 Grp_doc_json='';

@@ -2796,9 +2796,22 @@ if (pos!=-1)
 {
 // redirects to target place when the final message is received.
 document.getElementById("frame1").contentDocument.body.innerHTML = "Copying in Progress.<br>Please leave this window open until the copying process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-$("#stylized").fadeOut(5000,function(){
+/*$("#stylized").fadeOut(5000,function(){
 window.location = redirection_url+'/content';
-});
+});*/
+$("#src_place").show();
+$('.src_place option:eq(2)').prop('selected', true);
+$("#cmdu").hide();
+$("#from_label").show();
+$("#to_label").show();
+
+$("#from_place").show();
+$("#to_place").show();
+$("#button_div").show();
+//$('#select_items_button').css("margin-top", "20px");
+//$('#selected_items').css("margin-top", "-120px");
+$("#select_items_button").show();
+$("#copyTo").text("Copy this:");
 }
 }
 else

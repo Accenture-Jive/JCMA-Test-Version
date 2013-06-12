@@ -109,7 +109,7 @@ document.getElementById("selected_items_copy").innerHTML=ieSpan;
 else
 {
 var iframe = '<iframe id="frame1" src = "javascript:"&nbsp;" style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
-document.getElementById("selected_items").innerHTML=iframe;  
+document.getElementById("selected_items_copy").innerHTML=iframe;  
 $("#copyTo").text("Moving this:");
 }
 
@@ -395,15 +395,14 @@ else {
 		$("#to_place").show();
 		$("#cmdu").hide();
 		$("#button_div").hide();
-		$("#button_div").show();
 		$("#button_div").hide();
-		$("#button_div_copy").hide();
+		$("#button_div_copy").show();
 		$("#select_items").hide();
 		$("#select_items_copy").show();
 		$("#src_place").show();
 		//$('#selected_items').css("margin-top", "-105px");
 		//$('#button_div').css("margin-top", "10px");
-		$("#select_items_button").show();
+		$("#select_items_button").hide();
 		var str='Moving completed. Please click   <a href='+finalurl+'>here </a>  for the new location of your content.';
 		document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
 		

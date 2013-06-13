@@ -206,6 +206,18 @@ $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
 
 //*************End****************
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 $('#start_copying_button').unbind('click').click(function(){startCopying();});		
 }
 else if(sel_action_val=="move"){
@@ -291,6 +303,18 @@ $("#tag_select_items_button").hide();
 $("#select_items_button").hide();
 
 //*************End****************
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 $('#start_copying_button').unbind('click').click(function(){startMoving();});
 }
 else if(sel_action_val=="delete"){
@@ -363,6 +387,18 @@ $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
 
 //*************End****************
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 $('#start_copying_button').unbind('click').click(function(){startDeleting();});
 }
 else if(sel_action_val=="uploadd"){
@@ -391,6 +427,18 @@ $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
 
 //*************End****************
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 if(browserName=="MSIE")
 {
 
@@ -566,6 +614,18 @@ $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
 
 //*************End****************
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 $('#start_copying_button').unbind('click').click(function(){startDownloading();});
 }
 
@@ -590,7 +650,18 @@ $("#start_copying_button").hide();
 $("#start_uploading").hide();
 $("#change_contents").hide();
 //*********************End*********************
-
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 //Hide all the items with regard to Manage Tags*************
 $("#tagShow").hide();
 $("#tagFrom").hide();
@@ -697,6 +768,19 @@ $("#tag_from_project").hide();
 $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
 document.getElementById("cat_place").style.display="inline";
+
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 //*************End****************
 
 //Hide all the items with regard to download
@@ -793,6 +877,20 @@ $("#del_place").hide();
 $("#upShow").hide();
 $("#up_place").hide();
 $('#select_items_button').hide();
+
+//hide the finale tags items also 
+$("#finalTagShow").hide();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").hide();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
+
 //********Hide all  the items with regard to Manage categories*************
 $("#catShow").hide();
 $("#catFrom").hide();

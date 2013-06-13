@@ -1557,6 +1557,16 @@ $("#dwn_from_group").hide();
 $("#dwn_from_space").hide();
 $("#dwn_from_project").show();
 }
+else if(sel_action_val=="tags")
+{
+
+// actions when the user choses to download files.
+alert("Inside tags...");
+tagPopulatList =  new Array();
+completeTagIndex = 0;
+fromRequestAction = 'fromProjectRequestAction';
+populateContentforTags(space_url,blog_url);
+}
 else if(sel_action_val=="select_action")
 {
 // actions when the user changes the action to default value.

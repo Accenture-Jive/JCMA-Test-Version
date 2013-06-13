@@ -5213,7 +5213,7 @@ function startUpdatingTags() {
     $("#tag_select_items_button").hide();
 	//hide the finale tags items also 
 $("#finalTagShow").show();
-$("#finale_tagFrom").show();
+$("#finale_tagFrom").hide();
 $("#finale_tag_from_space").show();
 $("#finale_tag_from_group").hide();
 $("#finale_tag_from_project").hide();

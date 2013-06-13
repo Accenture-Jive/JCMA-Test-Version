@@ -249,6 +249,7 @@ document.getElementById("copyTo").style.visibility="hidden";
 document.getElementById("del_place").style.display="inline";
 document.getElementById("up_place").style.display="inline";
 $("#del_place").hide();
+$("#button_div").hide();
 $("#up_place").hide();
 $("#change_selection_div").hide();
 $("#stylized").show();

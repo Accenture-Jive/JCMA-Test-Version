@@ -250,6 +250,7 @@ document.getElementById("del_place").style.display="inline";
 document.getElementById("up_place").style.display="inline";
 $("#del_place").hide();
 $("#button_div").hide();
+$("#select_items_button").hide();
 $("#up_place").hide();
 $("#change_selection_div").hide();
 $("#stylized").show();

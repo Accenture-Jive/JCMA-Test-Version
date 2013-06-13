@@ -5187,23 +5187,15 @@ function startUpdatingTags() {
    // $("#tagFrom").css("margin-top", "-290px");
    // $("#tag_from_space").css("margin-top", "-250px");
    // $("#tag_from_group").css("margin-top", "-250px");
-    $("#tag_from_project").css("margin-top", "-250px");
-    $("#selTag").show();
+   // $("#tag_from_project").css("margin-top", "-250px");
+    $("#selTag").hide();
     $('#selTag').text("Selected Tag");
-   // $("#selTag").css("margin-left", "205px");
-   // $("#selTag").css("margin-top", "135px");
-   // $("#add_tag").css("margin-left", "240px");
-    //$("#add_tag").css("margin-top", "145px");
 
-    $("#tagTo").css("margin-left", "250px");
-    $("#tagTo").css("margin-top", "170px");
 
     $("#selection_menu").hide();
     $("#stylized").show();
     $("#change_selection_div").show();
-    $("#change_contents").hide();
-    $("#start_copying_button").hide();
-
+     
     $("#cmdu").show();
     $("#cmdu").text("Manage Tags");
     $("#src_place").hide();
@@ -5213,7 +5205,7 @@ function startUpdatingTags() {
     $("#tag_place").hide();
     $("#tag_sel").hide();
     //$("#selTag").hide();
-    $("#tagTo").show();
+    $("#tagTo").hide();
     $("#tag_select_items_button").hide();
 
 
@@ -5253,7 +5245,7 @@ function startUpdatingTags() {
     //alert("mainUncheckItems.length = "+mainUncheckItems.length);
     //console.log("mainUncheckItems.length = "+mainUncheckItems.length);
     //***********************************
-    filterCheckedUncheckTagUrl1();
+    //filterCheckedUncheckTagUrl1();
 
 
     catIndex = 0;

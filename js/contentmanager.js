@@ -5224,6 +5224,7 @@ $("#finalSelTag").show();
 $("#finale_tag_sel").hide();
 $("#finale_add_tag_button").hide();
 $("#finale_add_tag").show();
+$("#finalSelTag").css("margin-top","-20px");
 $("#finale_tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();
 //End

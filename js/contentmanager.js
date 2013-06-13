@@ -212,6 +212,7 @@ else if(sel_action_val=="move"){
 document.getElementById("to_place").disabled = true;
 src_space_name='';
 dest_space_name='';
+$("#select_items_button").hide();
 $("#cmdu").text("Move");
 $("#dwn_from_space").hide();
 $("#dwn_from_group").hide();

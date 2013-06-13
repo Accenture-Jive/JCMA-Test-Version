@@ -5223,6 +5223,7 @@ $("#finalSelTag").show();
 $("#finale_tag_sel").hide();
 $("#finale_add_tag").show();
 $("#tag_select_items_button").hide();
+$("#selected_items_tags").hide();
 $("#finale_finalTagTo").hide();
 //End
 

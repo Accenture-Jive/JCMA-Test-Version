@@ -212,7 +212,6 @@ else if(sel_action_val=="move"){
 document.getElementById("to_place").disabled = true;
 src_space_name='';
 dest_space_name='';
-$("#select_items_button").hide();
 $("#cmdu").text("Move");
 $("#dwn_from_space").hide();
 $("#dwn_from_group").hide();
@@ -289,6 +288,7 @@ $("#tag_from_group").hide();
 $("#tag_from_project").hide();
 $("#add_tag_button").hide();
 $("#tag_select_items_button").hide();
+$("#select_items_button").hide();
 
 //*************End****************
 $('#start_copying_button').unbind('click').click(function(){startMoving();});

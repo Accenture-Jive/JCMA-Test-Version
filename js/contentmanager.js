@@ -4905,7 +4905,7 @@ function populatePollsForTags(space_url) {
             document.getElementById("tag_place").style.display = "inline";
             $("#dwn_place").hide();
             $("#tag_place").show();
-            $("#tag_place").css("margin=top","30px");
+            $("#tag_place").css("margin-top","30px");
             document.getElementById("tag_from_space").innerHTML = '<span id="myId" style="text-decoration:underline;">Space</span>' + ': ' + global_from_place_name;
 
             $("#tag_from_space").show();

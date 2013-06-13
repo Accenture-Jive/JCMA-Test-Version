@@ -5202,7 +5202,10 @@ function startUpdatingTags() {
     $("#start_copying_button").hide();
     $("#change_contents").hide();
     $("#button_div").hide();
-    $("#tag_place").hide();
+    $("#tagFrom").hide();
+    $("#tag_from_space").hide();
+    $("#add_tag").hide();
+    $("#tag_sel").hide();
     $("#tag_sel").hide();
     //$("#selTag").hide();
     $("#tagTo").hide();

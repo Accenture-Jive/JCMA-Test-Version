@@ -5642,9 +5642,12 @@ $("#finale_tag_from_space").show();
 $("#finale_tag_from_group").hide();
 $("#finale_tag_from_project").hide();
 $("#finalSelTag").show();
+$("#finalSelTag").text("Enter Tag :");
 $("#finale_tag_sel").show();
+//$("#finale_tag_sel").css("margin-top","70px");
 $("#finale_add_tag_button").show();
-$("#finale_add_tag").show();
+//$("#finale_add_tag_button").css("margin-top","65px");
+$("#finale_add_tag").hide();
 $("#finale_tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();
 //End

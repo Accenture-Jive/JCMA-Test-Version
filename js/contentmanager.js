@@ -4895,15 +4895,15 @@ function populatePollsForTags(space_url) {
             $("#selTag").show();
             $("#up_select_items_button").hide();
             $("#change_selection_div").hide();
-            //$("#dwnShow").hide();
-            //$("#catShow").hide();
+            $("#dwnShow").hide();
+            $("#catShow").hide();
             $("#tagShow").show();
             //$("#upShow").hide();
             $("#up_place").hide();
             $("#add_tag").hide();
             document.getElementById("dwn_place").style.display = "inline";
             document.getElementById("tag_place").style.display = "inline";
-           // $("#dwn_place").hide();
+            $("#dwn_place").hide();
             $("#tag_place").show();
             $("#tag_place").css("margin=top","30px");
             document.getElementById("tag_from_space").innerHTML = '<span id="myId" style="text-decoration:underline;">Space</span>' + ': ' + global_from_place_name;

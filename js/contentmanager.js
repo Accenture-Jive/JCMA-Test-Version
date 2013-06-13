@@ -4479,3 +4479,16 @@ else {
 
 }
 //*********************************************************End*************
+
+function repopulateContents() {
+selected_cat = '';
+selected_tag = '';
+arrayIndex=0;
+addId=new Array();
+getDocs(space_url);
+getFiles(space_url);
+getDiscussions(space_url);
+getIdeas(space_url);
+getPolls(space_url);
+getBlogs(blog_url);
+}

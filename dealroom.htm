@@ -62,7 +62,7 @@ Select Bulk Action:
 <option value="delete">Delete</option>
 <option value="uploadd">Upload</option>
 <option value="download">Download</option>
-<option value="tags">Manage Tags</option>
+<option value="manageTags">Manage Tags</option>
 <option value="categs">Manage Categories</option>
 </select> 
 </td>
@@ -136,17 +136,15 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:110px;">
 <option value="select_group">Select Group</option>
 <option value="select_project">Select Project</option>
 </select> 
-
 </td>
 </tr>
 <tr>
 <span id ="deleteTo" style="display:none;margin-left:-60px;font-weight:bold;position:absolute; margin-top:165px;"></span>
 </tr>
 <tr>
-<input type="button" id="del_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:-86px;font-weight:bold;position:absolute; margin-top:190px;" onclick="javascript:showTab();javascript:highlightTab();javascript:repopulateContents();"/>
+<input type="button" id="del_select_items_button" value="Select Contents" name="select_items" style="display:none;margin-left:-86px;font-weight:bold;position:absolute; margin-top:190px;" onclick="javascript:showTab();javascript:highlightTab();"/>
 </tr>
 </div>
-
 
 <div id="upShow">
 <label id ="upFrom" style="display:none;margin-left:-135px;position:absolute; margin-top:70px;"><br/>Upload To:</label>
@@ -226,7 +224,7 @@ style="display:none;margin-left:-80px;position:absolute; margin-top:110px;">
 <tr>
 <td colspan="2">
 <div id="button_div" style="display:none;font-family:Tahoma;overflow-y:auto;height:150px;">
-<input type="button" id="select_items_button" value="Select Contents" name="select_items" style="margin-left:220px;float:left;" onclick="javascript:showTab();javascript:highlightTab();javascript:repopulateContents();"/>
+<input type="button" id="select_items_button" value="Select Contents" name="select_items" style="margin-left:220px;float:left;" onclick="javascript:showTab();javascript:highlightTab();"/>
 </div>
 <div id="change_selection_div" style="width:650px;display:none;font-family:Tahoma;margin-left:5px;">
 <br/>
@@ -357,39 +355,6 @@ style="display:none;margin-left:-65px;position:absolute; margin-top:0px;">
 <tr>
 </tr>
 </div>
-<div id="finalTagShow">
-<label id ="tagFrom" style="margin-left:225px;position:absolute; margin-top:-30px;"><br/>Manage Tags In:</label>
-<tr>
-<tr>
-<label id="tag_from_space" class="xlabel" style="width:250px;height:33px;margin-left:195px;position:absolute; margin-top:10px;font-weight:normal;text-align:center;display:none;">Manage Tags in Space</label>
-<label id="tag_from_group" class="xlabel" style="width:250px;height:33px;margin-left:195px;position:absolute; margin-top:10px;font-weight:normal;text-align:center;display:none;">Manage Tags in Group</label>
-<label id="tag_from_project" class="xlabel" style="width:250px;height:33px;margin-left:195px;position:absolute; margin-top:10px;font-weight:normal;text-align:center;display:none;">Manage Tags in Project</label>
-</tr>
-<td>
-<br/>
-</td>
-</tr>
-<tr>
-<tr>
-<label id ="finalSelTag" style="margin-left:170px;position:absolute; margin-top:60px;"><br/>Enter Tag</label>
-</tr>
-<td>
-<br/>
-<input type="text" name="tag_sel" id="tag_sel" style="margin-left:-75px;position:absolute; margin-top:90px;width:120px;">
-<input type="button" id="add_tag_button" value="OK" name="add_tag_button" style="display:none;margin-left:60px;position:absolute; margin-top:90px;" onclick="javascript:tagSel();"/>
-<label id="add_tag" style="text-align:center;margin-left:250px;position:absolute; margin-top:90px;width:120px;">Copy From Space</label>
-</td>
-</tr>
-<tr>
-<span id ="finalTagTo" style="margin-left:235px;font-weight:bold;position:absolute; margin-top:120px;"></span>
-</tr>
-<tr>
-<input type="button" id="tag_select_items_button" value="Select Contents" name="select_items" style="margin-left:255px;font-weight:bold;position:absolute; margin-top:150px;" onclick="javascript:populateContent1();"/>
-</tr>
-<tr>
-</tr>
-</div>
-
 </div>
 
 <div id="selection_menu" class="myform" style="

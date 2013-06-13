@@ -4873,26 +4873,12 @@ function populatePollsForTags(space_url) {
 
 
         if (fromRequestAction == 'fromSpaceRequestAction') {
-            /*$('#all_selected_items').css("margin-top", "80px");
-            $('#selected_items').css("margin-top", "80px");
-            $("#tagFrom").css("margin-top", "-30px");
-            $("#tag_from_space").css("margin-top", "10px");
-            $("#tag_place").css("margin-top", "40px");
-            $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top")) + 35 + 'px');
-            //$("#selTag").css("margin-top", "60px");
-            $("#tag_sel").css("margin-top", "90px");
-            $("#add_tag_button").css("margin-top", "90px");
-            $("#tag_place").css("margin-left", '-65px');
-            $("#tagFrom").css("margin-left", '235px');
-            $("#selTag").css("margin-left", '205px');
-            $("#tag_sel").css("margin-left", '-75px');*/
+            
             $("#selTag").text("Enter Tag");
-
-
             $("#tagTo").text("Assign tag to this content:").append('<br/>');
             document.getElementById("tagTo").style.display = "inline";
             $("#tagTo").hide();
-            $("#dwnTo").hide();
+            //$("#dwnTo").hide();
             $("#upTo").hide();
             $("#tag_sel option").each(function () {
                 $(this).remove();
@@ -4909,35 +4895,24 @@ function populatePollsForTags(space_url) {
             $("#selTag").show();
             $("#up_select_items_button").hide();
             $("#change_selection_div").hide();
-            $("#dwnShow").hide();
-            $("#catShow").hide();
+            //$("#dwnShow").hide();
+            //$("#catShow").hide();
             $("#tagShow").show();
-            $("#upShow").hide();
+            //$("#upShow").hide();
             $("#up_place").hide();
             $("#add_tag").hide();
             document.getElementById("dwn_place").style.display = "inline";
             document.getElementById("tag_place").style.display = "inline";
-            $("#dwn_place").hide();
+           // $("#dwn_place").hide();
             $("#tag_place").show();
+            $("#tag_place").css("margin=top","30px");
             document.getElementById("tag_from_space").innerHTML = '<span id="myId" style="text-decoration:underline;">Space</span>' + ': ' + global_from_place_name;
 
             $("#tag_from_space").show();
             $("#tag_from_group").hide();
             $("#tag_from_project").hide();
         } else if (fromRequestAction == 'fromGroupRequestAction') {
-           /* $('#all_selected_items').css("margin-top", "80px");
-            $('#selected_items').css("margin-top", "80px");
-            $("#tagFrom").css("margin-top", "-30px");
-            $("#tag_from_group").css("margin-top", "10px");
-            $("#tag_place").css("margin-top", "40px");
-            $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top")) + 35 + 'px');
-            //$("#selTag").css("margin-top", "60px");
-            $("#tag_sel").css("margin-top", "90px");
-            $("#add_tag_button").css("margin-top", "90px");
-            $("#tag_place").css("margin-left", '-65px');
-            $("#tagFrom").css("margin-left", '235px');
-            $("#selTag").css("margin-left", '205px');
-            $("#tag_sel").css("margin-left", '-75px');*/
+           
             $("#selTag").text("Enter Tag");
             $("#tagTo").text("Assign tag to this content:").append('<br/>');
             document.getElementById("catTo").style.display = "inline";
@@ -4974,19 +4949,7 @@ function populatePollsForTags(space_url) {
             $("#tag_from_project").hide();
             $("#add_tag").hide();
         } else {
-           /* $('#all_selected_items').css("margin-top", "80px");
-            $('#selected_items').css("margin-top", "80px");
-            $("#tagFrom").css("margin-top", "-30px");
-            $("#tag_from_project").css("margin-top", "10px");
-            $("#tag_place").css("margin-top", "40px");
-            $("#selTag").css("margin-top", parseInt($("#tag_place").css("margin-top")) + 35 + 'px');
-            //$("#selTag").css("margin-top", "60px");
-            $("#tag_sel").css("margin-top", "90px");
-            $("#add_tag_button").css("margin-top", "90px");
-            $("#tag_place").css("margin-left", '-65px');
-            $("#tagFrom").css("margin-left", '235px');
-            $("#selTag").css("margin-left", '205px');
-            $("#tag_sel").css("margin-left", '-75px');*/
+          
             $("#selTag").text("Enter Tag");
             $("#tagTo").text("Assign tag to this content:").append('<br/>');
             document.getElementById("tagTo").style.display = "inline";

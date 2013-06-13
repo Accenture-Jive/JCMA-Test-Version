@@ -5643,6 +5643,7 @@ $("#finale_tag_from_group").hide();
 $("#finale_tag_from_project").hide();
 $("#finalSelTag").show();
 $("#finale_tag_sel").show();
+$("#finale_add_tag_button").show();
 $("#finale_add_tag").show();
 $("#finale_tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();

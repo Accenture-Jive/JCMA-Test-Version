@@ -2800,7 +2800,7 @@ document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma"
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
 document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = "Copying in Progress.<br>Please leave this window open until the copying process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-clearTimeout(id);
+
 var compare='You will be redirected to the "copy to" group.';
 
 var pos=str.indexOf(compare);
@@ -2811,6 +2811,7 @@ document.getElementById("frame1").contentDocument.body.innerHTML = "Copying in P
 /*$("#stylized").fadeOut(5000,function(){
 window.location = redirection_url+'/content';
 });*/
+clearTimeout(id);
 $("#src_place").show();
 $('.src_place option:eq(2)').prop('selected', true);
 $("#cmdu").hide();

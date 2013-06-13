@@ -726,6 +726,8 @@ $("#tag_select_items_button").hide();
 
 //*************End****************
 }
+$('#select_items_button').hide();
+$('#button_div').hide();
 }
 
 function fromPlace()

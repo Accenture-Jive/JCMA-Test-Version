@@ -2551,6 +2551,8 @@ Grp_blog_json='';
 Grp_poll_json='';
 
 $("#button_div").hide();
+$("#del_select_items_button_pos1").hide();
+$("#del_place_pos1").hide();
 document.getElementById("copyTo").style.visibility="visible";
 document.getElementById("start_copying_button").disabled = false;
 

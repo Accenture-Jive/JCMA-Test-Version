@@ -4496,4 +4496,7 @@ getDiscussions(space_url);
 getIdeas(space_url);
 getPolls(space_url);
 getBlogs(blog_url);
+
+//Hiding the contents for Delete new componenets
+  $("#del_select_items_button_pos1").show();
 }

@@ -1158,6 +1158,15 @@ $("#cat_place").css("margin-top", "40px");
 
 categoryTest();
 }
+else if(sel_action_val=="tags")
+{
+// actions when the user choses to download files.
+//$('#tag_place').css("margin-top", "120px");
+tagPopulatList =  new Array();
+completeTagIndex = 0;
+fromRequestAction = 'fromSpaceRequestAction';
+populateContentforTags(space_url,blog_url);
+}
 
 else if(sel_action_val=="select_action")
 {
@@ -1323,6 +1332,14 @@ $("#del_place").css("margin-top", "140px");
 $("#del_from_group").show();
 $("#del_from_space").hide();
 $("#del_from_project").hide();
+}
+else if(sel_action_val=="tags")
+{
+alert("Inside tags...");
+tagPopulatList =  new Array();
+completeTagIndex = 0;
+fromRequestAction = 'fromGroupRequestAction';
+populateContentforTags(space_url,blog_url);
 }
 else if(sel_action_val=="download")
 {

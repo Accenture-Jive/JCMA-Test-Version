@@ -2789,7 +2789,7 @@ if(!flag)
 {
 refreshiframe();
 }
-setTimeout("refreshiframe()",1000); 	
+var id =setTimeout("refreshiframe()",1000); 	
 var str=response.content;
 var res='{ error: "Connect to /54.246.36.246:8080 timed out" }';
 var errorCode=str.indexOf(res);
@@ -2800,7 +2800,7 @@ document.getElementById("frame1").contentDocument.body.style.fontFamily="Tahoma"
 document.getElementById("frame1").contentDocument.body.style.fontSize = "12px";
 document.getElementById("frame1").contentDocument.body.style.color='Grey';
 document.getElementById("frame1").contentDocument.body.innerHTML = "Copying in Progress.<br>Please leave this window open until the copying process has been completed.<br><br><span id='mySpan' style='font-weight:bold;'>"+str.fontcolor("#3778C7")+"</span>";
-
+clearTimeout(id);
 var compare='You will be redirected to the "copy to" group.';
 
 var pos=str.indexOf(compare);

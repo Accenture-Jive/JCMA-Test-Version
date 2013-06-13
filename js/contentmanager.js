@@ -892,7 +892,7 @@ document.getElementById("copyTo").style.visibility="hidden";
 }
 }
 
-function est() {
+function fromSpaceRequest() {
 // Handles user request to select the SPACE and then handle the response to fetch details about the selected SPACE.
 
 var from_place_name='';
@@ -902,9 +902,6 @@ document.getElementById("to_place").disabled = false;
 document.getElementById("from_project").innerHTML=msg2;
 document.getElementById("from_group").innerHTML=msg2;
 document.getElementById("from_space").innerHTML=msg2;
-//Hidig new elements related to delete 
-$("#del_select_items_button_pos1").hide();
-$("#del_place_pos1").hide();
 var params = {
 type : "space",
 success : ( function(data){
@@ -918,6 +915,8 @@ blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
 
 $("#del_place").hide();
+$("#del_place_pos1").hide();
+$("#del_select_items_button").hide();
 document.getElementById("from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
 
 // Check if the source place is empty and reset the values accordingly.

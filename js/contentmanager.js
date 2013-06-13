@@ -5229,6 +5229,7 @@ $("#finale_finalTagTo").hide();
 
 
     $("#selected_items").hide();
+    $("#selected_items_tags").hide();
 
     if (browserName == "MSIE") {
         var ieSpan = '<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';

@@ -5168,7 +5168,6 @@ $("#tag_select_items_button").css("margin-top", parseInt($("#tagTo").css("margin
         $("#tag_sel").hide();
         document.getElementById("add_tag").innerHTML = $('#tag_sel').val();
         document.getElementById("finale_add_tag").innerHTML = $('#tag_sel').val();
-        document.getElementById("finale_add_tag").innerHTML = $('#tag_sel').val();
         //$("#add_tag").css("margin-left", '250px');
         $("#add_tag").show();
         getDocs(space_url);
@@ -5228,7 +5227,7 @@ $("#finale_finalTagTo").hide();
 
 
 
-    $("#selected_items").hide();
+    $("#selected_items").show();
 
     if (browserName == "MSIE") {
         var ieSpan = '<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';

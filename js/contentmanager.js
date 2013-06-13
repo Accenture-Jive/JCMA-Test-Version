@@ -2937,6 +2937,16 @@ function startUploading(){
 // handles the actions for upload functionality.
 $("#cmdu").show();
 $("#src_place").hide();
+$("#continue_button_upld").css("margin-top",'-30px');
+if(uploadContinueAction) {
+$("#continue_button_upld").css("margin-left",'250px');
+}
+else {
+$("#continue_button_upld").css("margin-left",'250px');
+$("#continue_button_upld").css("margin-left",'250px');
+}
+
+$("#continue_button_upld").show();
 var files = $('#up_select_items_button').prop("files");
 var names = $.map(files, function(val) { return val.name; });
 for(var i=0;i<names.length;i++)

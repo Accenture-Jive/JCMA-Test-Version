@@ -304,9 +304,11 @@ function deleteContents() {
             $("#src_place").show();
             $('#del_place').css("margin-left", "250px");
             $('#del_select_items_button').css("margin-left", "250px");
-            $("#del_place").show();
+            $("#del_place").hide();
+            $("#del_place_pos1").show();
             $("#deleteTo").show();
-            $("#del_select_items_button").show();
+            $("#del_select_items_button").hide();
+            $("#del_select_items_button_pos1").show();
         } else {
 
             console.log("contents  succesfully deleted");

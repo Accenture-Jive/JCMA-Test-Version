@@ -728,6 +728,11 @@ $("#tag_select_items_button").hide();
 }
 $('#select_items_button').hide();
 $('#button_div').hide();
+$('#del_select_items_button_pos1').hide();
+//Hiding the delete componets
+$("#del_place_pos1").hide();
+$("#del_select_items_button_pos1").hide();
+//********************End
 }
 
 function fromPlace()

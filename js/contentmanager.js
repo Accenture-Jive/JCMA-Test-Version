@@ -5226,16 +5226,15 @@ $("#finale_finalTagTo").hide();
 
 
 
-    $("#selected_items").hide();
-    $("#selected_items_tags").hide();
+    $("#selected_items").show();
 
     if (browserName == "MSIE") {
         var ieSpan = '<span id="ieSpan" style="font-family:Tahoma;font-size:12px;font-color:#3778C7;"></span>';
-        document.getElementById("selected_items_tags").innerHTML = ieSpan;
+        document.getElementById("selected_items").innerHTML = ieSpan;
     } else {
         var iframe = '<iframe id="frame1"  style="width:650px;height:90px;margin-top:0px;font-family:Tahoma"></iframe>';
         document.getElementById("selected_items").innerHTML = iframe;
-        $("#finale_finalTagTo").text("Updating Tags:");
+        $("#tagTo").text("Updating Tags:");
     }
 
     if (browserName == "MSIE") {

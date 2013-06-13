@@ -5222,7 +5222,7 @@ $("#finale_tag_from_project").hide();
 $("#finalSelTag").show();
 $("#finale_tag_sel").hide();
 $("#finale_add_tag").show();
-$("#tag_select_items_button").hide();
+$("#finale_tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();
 //End
 

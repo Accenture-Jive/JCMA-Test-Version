@@ -5609,6 +5609,7 @@ function removeTagsForContents() {
             $("#cmdu").hide();
             $("#src_place").show();
             $("#tag_place").hide();
+            $("#tag_sel").hide();
             $("#finale_tag_place").show();
            // $('#tag_place').css("margin-top", "-235px");
            // $('#tag_place').css("margin-left", "250px");

@@ -5167,6 +5167,7 @@ $("#tag_select_items_button").css("margin-top", parseInt($("#tagTo").css("margin
 
         $("#tag_sel").hide();
         document.getElementById("add_tag").innerHTML = $('#tag_sel').val();
+        document.getElementById("finale_add_tag").innerHTML = $('#tag_sel').val();
         //$("#add_tag").css("margin-left", '250px');
         $("#add_tag").show();
         getDocs(space_url);
@@ -5217,9 +5218,9 @@ $("#finale_tagFrom").show();
 $("#finale_tag_from_space").show();
 $("#finale_tag_from_group").hide();
 $("#finale_tag_from_project").hide();
-$("#finalSelTag").hide();
+$("#finalSelTag").show();
 $("#finale_tag_sel").hide();
-$("#finale_add_tag").hide();
+$("#finale_add_tag").show();
 $("#tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();
 //End

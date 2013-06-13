@@ -304,11 +304,9 @@ function deleteContents() {
             $("#src_place").show();
             $('#del_place').css("margin-left", "250px");
             $('#del_select_items_button').css("margin-left", "250px");
-            $("#del_place").hide();
-            $("#del_place_pos1").show();
+            $("#del_place").show();
             $("#deleteTo").show();
-            $("#del_select_items_button").hide();
-            $("#del_select_items_button_pos1").show();
+            $("#del_select_items_button").show();
         } else {
 
             console.log("contents  succesfully deleted");
@@ -317,13 +315,11 @@ function deleteContents() {
             console.log("contents  succesfully deleted");
             $("#cmdu").hide();
             $("#src_place").show();
-           // $('#del_place').css("margin-left", "250px");
-           // $('#del_select_items_button').css("margin-left", "250px");
-            $("#del_place").hide();
-            $("#del_place_pos1").show();
+            $('#del_place').css("margin-left", "250px");
+            $('#del_select_items_button').css("margin-left", "250px");
+            $("#del_place").show();
             $("#deleteTo").show();
-            $("#del_select_items_button").hide();
-            $("#del_select_items_button_pos1").show();
+            $("#del_select_items_button").show();
             //alert('finalurl = '+finalurl);
             var str = 'Deleting completed. This can be verified here: <a href=' + finalurl + '>' + src_space_name + ' - Contents</a>';
             document.getElementById("frame1").contentDocument.body.innerHTML = "Note.<br><br><span id='mySpan' style='font-weight:bold;'>" + str.fontcolor("#3778C7") + "</span>";

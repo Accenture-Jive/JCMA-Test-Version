@@ -915,8 +915,6 @@ blog_url=data.resources.blog.ref;
 source_html_url=data.resources.html.ref;
 
 $("#del_place").hide();
-$("#del_place_pos1").hide();
-$("#del_select_items_button").hide();
 document.getElementById("from_space").innerHTML='<span id="myId" style="text-decoration:underline;">Space</span>'+': '+from_place_name;
 
 // Check if the source place is empty and reset the values accordingly.
@@ -2551,8 +2549,6 @@ Grp_blog_json='';
 Grp_poll_json='';
 
 $("#button_div").hide();
-$("#del_select_items_button_pos1").hide();
-$("#del_place_pos1").hide();
 document.getElementById("copyTo").style.visibility="visible";
 document.getElementById("start_copying_button").disabled = false;
 

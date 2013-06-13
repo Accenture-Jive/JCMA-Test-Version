@@ -5222,6 +5222,7 @@ $("#finale_tag_from_group").hide();
 $("#finale_tag_from_project").hide();
 $("#finalSelTag").show();
 $("#finale_tag_sel").hide();
+$("#finale_add_tag_button").hide();
 $("#finale_add_tag").show();
 $("#finale_tag_select_items_button").hide();
 $("#finale_finalTagTo").hide();
@@ -5630,7 +5631,7 @@ function removeTagsForContents() {
             $("#selTag").hide();
            // $('#tag_sel').css("margin-top", "-190px");
           //  $('#tag_sel').css("margin-left", "250px");
-            $("#tag_sel").show();
+            $("#tag_sel").hide();
            // $('#add_tag_button').css("margin-top", "-190px");
            // $('#add_tag_button').css("margin-left", "390px");
             $("#add_tag_button").hide();

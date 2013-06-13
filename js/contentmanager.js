@@ -5212,6 +5212,7 @@ function startUpdatingTags() {
    
     //$("#selTag").hide();
     $("#tagTo").hide();
+    $("#finale_tag_place").hide();
     $("#tag_select_items_button").hide();
 	//hide the finale tags items also 
 $("#finalTagShow").show();
@@ -5266,7 +5267,7 @@ $("#finale_finalTagTo").hide();
     //alert("mainUncheckItems.length = "+mainUncheckItems.length);
     //console.log("mainUncheckItems.length = "+mainUncheckItems.length);
     //***********************************
-    //filterCheckedUncheckTagUrl1();
+    filterCheckedUncheckTagUrl1();
 
 
     catIndex = 0;
@@ -5589,48 +5590,61 @@ function removeTagsForContents() {
             alert('Message:\n\nYou have insufficient rights to update all the content selected.\n\nYou need to have group administration or space moderation rights to update content with restricted authorship (e.g. discussions started by other users).\n\nPlease contact your group or space admin to get the necessary rights.');
             $("#cmdu").hide();
             $("#src_place").show();
-            $("#tag_place").show();
+            $("#tag_place").hide();
            // $('#tag_place').css("margin-top", "-235px");
            // $('#tag_place').css("margin-left", "250px");
             $("#tag_from_project").hide();
            // $('#selTag').css("margin-top", "-200px");
            // $('#selTag').css("margin-left", "200px");
-            $("#selTag").show();
+            $("#selTag").hide();
            // $('#tag_sel').css("margin-top", "-190px");
             //$('#tag_sel').css("margin-left", "250px");
-            $("#tag_sel").show();
+            $("#tag_sel").hide();
            // $('#add_tag_button').css("margin-top", "-190px");
            // $('#add_tag_button').css("margin-left", "390px");
-            $("#add_tag_button").show();
+            $("#add_tag_button").hide();
 
         } else {
             //alert("inside else ");
             $("#cmdu").hide();
             $("#src_place").show();
-            $("#tag_place").show();
+            $("#tag_place").hide();
+            $("#finale_tag_place").show();
            // $('#tag_place').css("margin-top", "-235px");
            // $('#tag_place').css("margin-left", "250px");
             if ($("#tag_from_space").text() != 'Manage Tags in Space')
-                $("#tag_from_space").show();
+                $("#tag_from_space").hide();
             else
                 $("#tag_from_space").hide();
             if ($("#tag_from_group").text() != 'Manage Tags in Group')
-                $("#tag_from_group").show();
+                $("#tag_from_group").hide();
             else
                 $("#tag_from_group").hide();
             if ($("#tag_from_project").text() != 'Manage Tags in Project')
-                $("#tag_from_project").show();
+                $("#tag_from_project").hide();
             else
                 $("#tag_from_project").hide();
            // $('#selTag').css("margin-top", "-200px");
            // $('#selTag').css("margin-left", "200px");
-            $("#selTag").show();
+            $("#selTag").hide();
            // $('#tag_sel').css("margin-top", "-190px");
           //  $('#tag_sel').css("margin-left", "250px");
             $("#tag_sel").show();
            // $('#add_tag_button').css("margin-top", "-190px");
            // $('#add_tag_button').css("margin-left", "390px");
-            $("#add_tag_button").show();
+            $("#add_tag_button").hide();
+			//hide the finale tags items also 
+$("#finalTagShow").show();
+$("#finale_tagFrom").show();
+$("#finale_tag_from_space").show();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").show();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").show();
+$("#finale_tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 
             for (var index = 0; index < errorReferenceCatArray.length; index++) {
                 console.log("Could Not Reference " + errorReferenceCatArray[index]);

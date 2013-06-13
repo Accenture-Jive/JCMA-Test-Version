@@ -5205,6 +5205,7 @@ function startUpdatingTags() {
     $("#tagFrom").hide();
     $("#tag_from_space").hide();
     $("#add_tag").hide();
+    $("#tag_place").hide();
     $("#tag_sel").hide();
     $("#tag_sel").hide();
     //$("#selTag").hide();

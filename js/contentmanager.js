@@ -5211,6 +5211,18 @@ function startUpdatingTags() {
     //$("#selTag").hide();
     $("#tagTo").hide();
     $("#tag_select_items_button").hide();
+	//hide the finale tags items also 
+$("#finalTagShow").show();
+$("#finale_tagFrom").hide();
+$("#finale_tag_from_space").show();
+$("#finale_tag_from_group").hide();
+$("#finale_tag_from_project").hide();
+$("#finalSelTag").hide();
+$("#finale_tag_sel").hide();
+$("#finale_add_tag").hide();
+$("#tag_select_items_button").hide();
+$("#finale_finalTagTo").hide();
+//End
 
 
 

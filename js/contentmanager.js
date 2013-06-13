@@ -5199,6 +5199,7 @@ function tagSel1() {
         $("#tagTo").text("Assign tag to this content:").append('<br/>');
         $("#tagTo").show();
         $("#finalSelTag").hide();
+        $("#finale_tag_sel").hide();
         $("#tag_sel").hide();
         $("#finale_add_tag_button").hide();
         $("#tag_select_items_button").show();

@@ -2667,12 +2667,12 @@ $(this).removeClass('borderadd');
 function showTab(){
 
 //Check and unchect the content for Manage Tags and categories
-/*console.log("array Len: "+addId.length);
+console.log("array Len: "+addId.length);
  for (var i=0; i<addId.length; i++) 
  {
 	 console.log("value: "+addId[i]);
 	 document.getElementById(addId[i]).checked = true;
- }*/
+ }
  
 // actions when user choses to select content he wants to copy/move/delete/download.
 

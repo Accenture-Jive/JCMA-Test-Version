@@ -4908,7 +4908,7 @@ function populatePollsForTags(space_url) {
             $("#tag_place").css("margin=top","30px");
             document.getElementById("tag_from_space").innerHTML = '<span id="myId" style="text-decoration:underline;">Space</span>' + ': ' + global_from_place_name;
 
-            $("#tag_from_space").hide();
+            $("#tag_from_space").show();
             $("#tag_from_group").hide();
             $("#tag_from_project").hide();
         } else if (fromRequestAction == 'fromGroupRequestAction') {
